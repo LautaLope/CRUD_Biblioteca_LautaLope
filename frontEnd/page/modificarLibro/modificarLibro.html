@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Biblioteca</title>
+    <link rel="stylesheet" href="modificarLibro.css">
+    <script src="modificarLibro.js"></script>
+</head>
+
+<body>
+    <nav>
+        <a href="../agregarLibro/agregarLibro.html">Agregar Libro</a>
+        <a href="../eliminarLibro/eliminarLibro.html">Eliminar Libro</a>
+        <a href="../obtenerLibros/obtenerLibros.html">Obtener Libros</a>
+        <a href="modificarLibro.html">Modificar Libro</a>
+        <a href="../listadoXFechaLibros/listadoXFechaLibros.html">Ver Libros Ordenados Por Fecha</a>
+    </nav>
+
+    <main>
+
+        <form action="" id="frmModificarLibros">
+            <label for="">Identificador del Libro: </label>
+            <input type="text" name="id" id="idInput" readonly>
+            <label for="">Nombre del Libro: </label>
+            <input type="text" name="nombre" id="nombreInput" required>
+            <label for="">Fecha de publicación: </label>
+            <input type="date" name="fecha" id="fechaInput" required>
+            <label for="">Precio del Libro: </label>
+            <input type="number" name="precio" id="precioInput" required>
+            <label for="">Imagen del Libro: </label>
+            <input type="file" name="imagen" id="imagenInput" required>
+            <input type="submit" value="Modificar Libro" class="btn">
+        </form>
+
+        <div id="listaLibros">
+
+        </div>
+    </main>
+
+
+</body>
+
+</html>

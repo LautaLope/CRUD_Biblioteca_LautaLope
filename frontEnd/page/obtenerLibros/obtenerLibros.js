@@ -1,10 +1,12 @@
 window.onload = async()=>{
     let libros = await obtenerLibros();
     mostrarLibros(libros);
+
 }
 
 async function obtenerLibros(){
-    let url = window.location.origin + "/CRUD_BIBLIOTECA_LautaroLope/backEnd/controller/libroController.php?function=obtener";
+    let url = window.location.origin + "/CRUD_Biblioteca_LautaLope/backEnd/controller/libroController.php?function=obtener";
+    console.log(url);
     let consulta = await fetch(url);
     let libros = await consulta.json();
     return libros;
@@ -29,3 +31,4 @@ function mostrarLibros(libros){
         `
     });
 }
+

@@ -14,7 +14,7 @@ function addFormEventCreateBook(){
 
 async function enviarLibro(form){
     let formData = new FormData(form);
-    let url = window.location.origin+"/CRUD_BIBLIOTECA_LautaroLope/backEnd/controller/libroController.php?function=agregar";
+    let url = window.location.origin + "/CRUD_Biblioteca_LautaLope/backEnd/controller/libroController.php?function=agregar";
     let config = {
         method: 'POST' ,
         body: formData

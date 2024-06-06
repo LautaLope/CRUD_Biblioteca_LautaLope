@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;   
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    border-bottom: 1px solid black;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin: 0;
+    height: max-content;
+    width: 100%;
+    gap: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 50%;
+    padding: 10px;
+}
+
+.btn{
+    border-radius: 15px;
+    width: 150px;
+    background-color: transparent;
+}
+
+.btn:hover{
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+
+.libro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.libro p{
+    margin: 0;
+}
+
+.libro img{
+    height: 60px;
+    width: 60px;
+}
+
+#listaLibros{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
